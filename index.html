@@ -21,20 +21,20 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-image: url("Per_camm_2 - Photo.jpg");
-            background-size: cover;
-            background-position: center;
+            background-image: url("image snap.png");
+            background-size: cover; /* Ensures the image covers the background */
+            background-position: center; /* Centers the image */
             background-repeat: no-repeat;
         }
         .top {
             text-align: center;
             color: black;
-            margin-bottom: 2%; /* Adjusted to move the header up */
+            margin-bottom: 65%; /* Adjusted to move the header up */
         }
         .bottom {
             text-align: center;
             color: black;
-            margin-top: 5%;
+            margin-top: 65%;
         }
         h1 {
             font-family: 'tt0296m';
@@ -43,7 +43,7 @@
         }
         h2 {
             font-family: 'tt0296m';
-            font-size: 4vw; /* Reduced font size */
+            font-size: 3.5vw; /* Reduced font size */
             margin: 0;
         }
         .blue {
@@ -55,13 +55,13 @@
         footer {
             position: absolute;
             bottom: 0; /* Positioned at the very bottom */
-            right: 2%; /* Aligned to the right */
+            left: 0.5%; /* Aligned to the right */
             text-align: right;
             color: white;
-            font-size: 1.5vw; /* Very small font size */
+            font-size: 1vw; /* Very small font size */
         }
         p {
-            font-size: 2.5vw; /* Reduced font size */
+            font-size: 2vw; /* Reduced font size */
             font-family: 'tt0296m';
             margin: 1% 0;
         }
@@ -71,33 +71,48 @@
 
         /* Media query for smaller screens */
         @media screen and (max-width: 768px) {
+            body {
+                background-image: url("image small.png"); /* Smaller image for smaller screens */
+            }
+            .top {
+                margin-bottom: 90%; /* Adjusted to move the header up */
+            }
+            .bottom {
+                margin-top: 90%;
+            }
             h1 {
-                font-size: 8vw; /* Adjusted for smaller screens */
+                font-size: 9vw; /* Adjusted for smaller screens */
             }
             h2 {
-                font-size: 5vw; /* Adjusted for smaller screens */
+                font-size: 6vw; /* Adjusted for smaller screens */
             }
             p {
-                font-size: 3.5vw; /* Adjusted for smaller screens */
+                font-size: 4vw; /* Adjusted for smaller screens */
             }
             footer {
-                font-size: 2.5vw; /* Adjusted for smaller screens */
+                font-size: 2vw; /* Adjusted for smaller screens */
             }
         }
 
         /* Media query for very small screens */
         @media screen and (max-width: 480px) {
+            .top {
+                margin-bottom: 140%; /* Adjusted to move the header up */
+            }
+            .bottom {
+                margin-top: 140%;
+            }
             h1 {
                 font-size: 10vw; /* Adjusted for very small screens */
             }
             h2 {
-                font-size: 6vw; /* Adjusted for very small screens */
+                font-size: 7vw; /* Adjusted for very small screens */
             }
             p {
-                font-size: 4vw; /* Adjusted for very small screens */
+                font-size: 4.5vw; /* Adjusted for very small screens */
             }
             footer {
-                font-size: 3vw; /* Adjusted for very small screens */
+                font-size: 2vw; /* Adjusted for very small screens */
             }
         }
     </style>
@@ -107,9 +122,9 @@
         <div class="top">
             <h1 class="blue">SIRAVISTA</h1>
             <h1 class="grey">DEVELOPMENTS LTD</h1>
-            <p>You Ask, We Build</p>
         </div>
         <div class="bottom">
+            <p>You Ask, We Build</p>
             <h2>COMING SOON</h2>
             <p class="contact">info@siravista.com</p>
         </div>
